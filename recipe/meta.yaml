@@ -1,12 +1,12 @@
-{% set version = "2019.12.3" %}
+{% set version = "2020.1.31" %}
 
 package:
   name: imagecodecs-lite
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/i/imagecodecs-lite/imagecodecs-lite-{{ version }}.tar.gz
-  sha256: 95d18aa13ceb1b18a6109433b42d054e13b9a295cba96c08ab719f864f589d68
+  url: https://pypi.io/packages/source/i/imagecodecs/imagecodecs-{{ version }}.tar.gz
+  sha256: 2e093bec9dc136818b9e9bf48231c142ee403fd9b6f6d2a5a8b9fbfd77002a3a
 
 build:
   number: 0
