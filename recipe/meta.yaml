@@ -1,7 +1,7 @@
 {% set version = "2020.1.31" %}
 
 package:
-  name: imagecodecs-lite
+  name: imagecodecs
   version: {{ version }}
 
 source:
@@ -26,7 +26,7 @@ requirements:
 
 test:
   imports:
-    - imagecodecs_lite
+    - imagecodecs
 
 about:
   home: https://www.lfd.uci.edu/~gohlke
