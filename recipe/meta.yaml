@@ -10,18 +10,31 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   host:
     - python
     - pip
     - numpy 1.14.*
     - msinttypes  # [win]
+    - blosc
+    - brotli
+    - bzip2
+    - giflib
+    - jpeg-turbo
+    - lcms2
+    - libaec
+    - libwebp
+    - zstd
+    - openjpeg =2.3.*
   run:
     - python
+    - {{ pin_compatible('numpy') }}
+    - {{ pin_compatible('blosc') }}
+    - {{ pin_compatible('brotli') }}
     - {{ pin_compatible('numpy') }}
 
 test:
